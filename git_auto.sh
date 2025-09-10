@@ -31,11 +31,11 @@ git commit -m "$commit_message" && \
 
 # 先从远程拉取更新，进行同步
 echo "Step 3: Pulling from remote to sync..."
-git pull origin master && \
+git pull origin main && \
 
 # 推送到远程仓库
 echo "Step 4: Pushing to remote..."
-git push origin master
+git push origin main
 
 # 3. 检查上一步的退出码，判断是否成功
 if [ $? -eq 0 ]; then
